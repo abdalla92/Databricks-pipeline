@@ -3,9 +3,9 @@
 # This script automates the deployment process for the Databricks game audience pipeline.
 
 # Set variables
-DATABRICKS_HOST= "dbc-0ac6af0e-d3c4.cloud.databricks.com" #"<your-databricks-host>"
-DATABRICKS_TOKEN="dapi410dcdee6a3f54310d16a81d37c78c21"
-WORKSPACE_DIR="/databricks-game-audience-pipeline"
+DATABRICKS_HOST= "<your-databricks-host>"
+DATABRICKS_TOKEN="<your-databricks-token>"
+WORKSPACE_DIR= "/path/to/your/workspace"
 
 # Function to deploy SQL scripts
 deploy_sql_scripts() {
