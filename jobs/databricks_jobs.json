@@ -1,0 +1,37 @@
+{
+  "jobs": [
+    {
+      "job_id": "ingest_s3_to_delta",
+      "name": "Ingest S3 to Delta",
+      "notebook_path": "/notebooks/01_ingest_s3_to_delta.py",
+      "max_retries": 3,
+      "retry_interval": 5,
+      "schedule": {
+        "quartz_cron_expression": "0 0 * * * ?",
+        "timezone_id": "UTC"
+      }
+    },
+    {
+      "job_id": "stream_consumer_and_merge",
+      "name": "Stream Consumer and Merge",
+      "notebook_path": "/notebooks/02_stream_consumer_and_merge.py",
+      "max_retries": 3,
+      "retry_interval": 5,
+      "schedule": {
+        "quartz_cron_expression": "0/5 * * * * ?",
+        "timezone_id": "UTC"
+      }
+    },
+    {
+      "job_id": "enrichment_geolocation_and_tod",
+      "name": "Enrichment with Geolocation and TOD",
+      "notebook_path": "/notebooks/03_enrichment_geolocation_and_tod.py",
+      "max_retries": 3,
+      "retry_interval": 5,
+      "schedule": {
+        "quartz_cron_expression": "0 0 * * * ?",
+        "timezone_id": "UTC"
+      }
+    }
+  ]
+}
