@@ -49,4 +49,4 @@ The project is organized into several directories, each serving a specific purpo
 - Refer to the `docs/operational_runbook.md` for operational procedures and troubleshooting tips.
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for more details.# Databricks-pipeline
+This project is licensed under the MIT License. See the LICENSE file for more details.
